@@ -36,10 +36,6 @@ public class ReadProperties {
         return properties.getProperty("password");
     }
 
-    public static String apiKey() {
-        return properties.getProperty("apiKey");
-    }
-
     public static boolean isHeadless() {
         return properties.getProperty("headless").equalsIgnoreCase("true");
     }

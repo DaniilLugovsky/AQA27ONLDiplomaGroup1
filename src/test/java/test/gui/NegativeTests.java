@@ -9,7 +9,6 @@ import org.testng.annotations.Test;
 
 public class NegativeTests extends BaseGuiTest {
 
-    // здесь совместили два теста в одном: тест на проверку всплывающего сообщения & тест на использование некорректных данных
     @Description("Тест на проверку всплывающего сообщения при невалидном логине")
     @Severity(SeverityLevel.NORMAL)
     @Test(testName = "Тест на проверку всплывающего сообщения при невалидном логине", description = "Тест на проверку всплывающего сообщения при невалидном логине")

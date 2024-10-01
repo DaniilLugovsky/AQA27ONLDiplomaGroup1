@@ -30,10 +30,6 @@ public class MyProfilePage extends BasePage {
         return new UIElement(pageDriver, IMAGE_AVATAR_LOCATOR);
     }
 
-    public Button getUploadAvatarButton() {
-        return new Button(pageDriver, UPLOAD_AVATAR_BUTTON_LOCATOR);
-    }
-
     public UIElement getUnsavedDataPopUp(){
         return new UIElement(pageDriver,UNSAVED_DATA_POP_UP);
     }

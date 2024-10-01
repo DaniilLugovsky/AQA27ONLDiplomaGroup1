@@ -5,7 +5,6 @@ import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import io.restassured.response.Response;
-import models.Project;
 import org.testng.annotations.Test;
 
 public class ApiDeleteTest extends BaseApiTest {
