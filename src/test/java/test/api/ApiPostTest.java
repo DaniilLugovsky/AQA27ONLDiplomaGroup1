@@ -16,7 +16,7 @@ public class ApiPostTest extends BaseApiTest {
 
     @Description("API Post Тест на проверку создания проекта")
     @Severity(SeverityLevel.CRITICAL)
-    @Test(testName = "API Post проверка создания проекта")
+    @Test(testName = "API Post проверка создания проекта", description = "API Post Тест на проверку создания проекта" )
     public void addProjectTest() {
         Project expectedProject = new Project();
         expectedProject.setName("API new project");
