@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Main Suite" parallel="tests" thread-count="2">
+    <test name="Smoke">
+        <classes>
+            <class name="test.api.ApiDeleteTest"/>
+            <class name="test.api.ApiGetTests"/>
+            <class name="test.api.ApiJsonFileTest"/>
+            <class name="test.api.ApiPostTest"/>
+            <class name="test.api.ApiPutTest"/>
+        </classes>
+    </test>
+    <test name="Regression">
+        <classes>
+            <class name="test.gui.NegativeTests"/>
+            <class name="test.gui.PositiveTests"/>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Main Suite" parallel="classes" thread-count="2">
+    <test name="Smoke">
+        <classes>
+            <class name="test.gui.PositiveTests">
+                <methods>
+                    <include name="addTestCaseTest"/>
+                    <include name="deleteTestCaseTest"/>
+                    <include name="fileUploadTest"/>
+                </methods>
+            </class>
+            <class name="test.api.ApiDeleteTest">
+                <methods>
+                    <include name="deleteProjectTest"/>
+                </methods>
+            </class>
+            <class name="test.api.ApiJsonFileTest">
+                <methods>
+                    <include name="addProjectUsingJsonFileTest"/>
+                </methods>
+            </class>
+            <class name="test.api.ApiPostTest">
+                <methods>
+                    <include name="addProjectTest"/>
+                </methods>
+            </class>
+            <class name="test.api.ApiPutTest">
+                <methods>
+                    <include name="updateProjectTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Regression">
+        <classes>
+            <class name="test.gui.NegativeTests">
+                <methods>
+                    <include name="popUpMessageTest"/>
+                    <include name="dataExceedsTheLimitTest"/>
+                    <include name="invalidTest"/>
+                </methods>
+            </class>
+            <class name="test.gui.PositiveTests">
+                <methods>
+                    <include name="boundaryValuesTest"/>
+                    <include name="dialogWindowTest"/>
+                </methods>
+            </class>
+            <class name="test.api.ApiGetTests">
+                <methods>
+                    <include name="getAllProjects"/>
+                    <include name="getSingleProject"/>
+                    <include name="getInvalidProjectTest"/>
+                </methods>
+            </class>
+            <class name="test.api.ApiPostTest">
+                <methods>
+                    <include name="addInvalidNameProject"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
